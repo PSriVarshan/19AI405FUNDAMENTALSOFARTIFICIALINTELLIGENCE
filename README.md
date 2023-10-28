@@ -89,6 +89,7 @@ traversedpath=dfs(graph,start,visited,path)
 print(traversedpath)
 ```
 #### First Sample :
+
 ##### Input :
 
 ![image](https://github.com/PSriVarshan/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/114944059/c31ddf74-c0b2-4de9-86d2-b97e54031b24)
@@ -98,6 +99,7 @@ print(traversedpath)
 ![image](https://github.com/PSriVarshan/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/114944059/a0a8f903-739a-4081-8827-bb9b6438d658)
 
 #### Second Sample :
+
 ##### Input :
 
 ![image](https://github.com/PSriVarshan/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/114944059/4d9af44e-52f7-41b6-954a-fa3d675d6c2c)
