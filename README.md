@@ -108,4 +108,4 @@ print(traversedpath)
 
 #### Result :
 
-###### Thus, a Graph was constructed and implementation of Depth First Search for the same graph was done successfully.
+Thus, a Graph was constructed and implementation of Depth First Search for the same graph was done successfully.
