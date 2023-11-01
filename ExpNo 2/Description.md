@@ -1,6 +1,6 @@
 <h1>ExpNo 2 : Implement Breadth First Search Traversal of a Graph</h1> 
-<h3>Name: Saravanan N</h3>
-<h3>Register Number/Staff Id: TSML006</h3>
+<h3>Name: Sri Varshan P</h3>
+<h3>Register Number : 212222240104</h3>
 <H3>Aim:</H3>
 <p>To Implement Breadth First Search Traversal of a Graph using Python 3.</p>
 <h3>Theory:</h3>
@@ -67,48 +67,71 @@ Now, Queue becomes empty, So, terminate these process of iteration.
 
 </ol>
 
+### PROGRAM:
+
+```py
+
+Developed by: Sri Varshan P
+Register number: 212222240104
+
+from collections import deque
+from collections import defaultdict
+def bfs(graph,start,visited,path):
+    queue = deque()
+    path.append(start)
+    queue.append(start)
+    visited[start] = True
+    while len(queue) != 0:
+        tmpnode = queue.popleft()
+        for neighbour in graph[tmpnode]:
+            if visited[neighbour] == False:
+                path.append(neighbour)
+                queue.append(neighbour)
+                visited[neighbour] = True
+    return path
+
+graph = defaultdict(list)
+v,e = map(int,input().split())
+for i in range(e):
+    u,v = map(str,input().split())
+    graph[u].append(v)
+    graph[v].append(u)
+
+start = 'A'
+path = []
+visited = defaultdict(bool)
+traversedpath = bfs(graph,start,visited,path)
+print(traversedpath)
+
+```
 <hr>
-<h3>Sample Input</h3>
+<h3>Input 1</h3>
 <hr>
-7 9 <BR>
-A B <BR>
-A C <BR>
-A F <BR>
-C E <BR>
-C F <BR>
-C D <BR>
-D E <BR>
-D G <BR>
-G F <BR>
+
+![image](https://github.com/KANISHKAR2607/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/118886772/dfde7ed4-d26e-4720-9a21-56ab6ba60ae7)
+
 <hr>
-<h3>Sample Output</h3>
+<h3>Output 1</h3>
 <hr>
-['A', 'B', 'C', 'F', 'E', 'D', 'G']
+
+![image](https://github.com/KANISHKAR2607/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/118886772/fdef4b14-f345-4ea4-b866-fc7ccf020d18)
+
 
 <hr>
 
 <hr>
-<h3>Sample Input</h3>
+<h3>Input 2</h3>
 <hr>
-5 6 <BR>
-0 1 <BR>
-0 2 <BR>
-1 2 <BR>
-1 3 <BR>
-2 4 <BR>
-3 4 <BR>
+
+![image](https://github.com/KANISHKAR2607/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/118886772/acc8257a-bc89-4174-afe7-318bbb9cf0b1)
+
 <hr>
-<h3>Sample Output</h3>
+<h3>Output 2</h3>
 <hr>
-['0', '1', '2', '3', '4']
+
+![image](https://github.com/KANISHKAR2607/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/118886772/13c5a564-813c-425f-adb4-0fee1f95d2e1)
+
 <hr>
 <h3>Result:</h3>
 <hr>
 <p>Thus,a Graph was constructed and implementation of Breadth First Search for the same graph was done successfully.</p>
-
-
-
-
-
-
-
