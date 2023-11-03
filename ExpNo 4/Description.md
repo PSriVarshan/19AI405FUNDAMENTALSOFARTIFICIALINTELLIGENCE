@@ -100,3 +100,7 @@ Score: 1  Solution :  Artificial Intelligencf<br>
 Score: 1  Solution :  Artificial Intelligencf<br>
 Score: 1  Solution :  Artificial Intelligencf<br>
 Score: 0  Solution :  Artificial Intelligence<br>
+
+### Result 
+
+#### Thus,a Graph was constructed and implementation of Simple Hill Climbing Algorithm for the same graph was done successfully.
